@@ -9,22 +9,6 @@ const possiveisResultados = [
     }
 ]
 
-function escolha(parametro) {
-    switch (parametro) {
-        case 1:
-            resultadoDoJogo(1)
-            break;
-        case 2:
-            resultadoDoJogo(2)
-            break;
-        case 3:
-            resultadoDoJogo(3)
-            break;
-        default:
-            break;
-    }
-}
-
 function resultadoDoJogo(jogadaPlayer) {
     let jogadaPc = parseInt(Math.random() * 3 + 1)
     let jogadorElement = document.querySelector(".player").getElementsByTagName("img")[jogadaPlayer - 1]
