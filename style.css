@@ -1,0 +1,113 @@
+@keyframes ativoBox {
+    0% {
+        width: 120px;
+        opacity: 0.7;
+    }
+
+    50% {
+        width: 150px;
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #36393f;
+}
+
+img {
+    width: 150px;
+    opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#titulo {
+    color: #62b9fd;
+    margin-bottom: 40px;
+}
+
+.container h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.containers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+.cabecalho p {
+    font-size: 30px;
+}
+
+.player {
+    width: 40%;
+    height: 230px;
+    background-color: #ff6a74;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.player img {
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.player .imagens a {
+    cursor: pointer;
+}
+
+.pc {
+    width: 40%;
+    height: 230px;
+    background-color: #62b9fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.pc img {
+    margin-top: 15px;
+}
+
+.ativa {
+    animation: ativoBox 2s forwards;
+}
+
+#console {
+    margin-top: 40px;
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #b0bdc3;
+    border-radius: 10px;
+}

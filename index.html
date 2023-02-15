@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joquempô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="titulo">Pedra, Papel e Tesoura</h1>
+        <div class="containers">
+
+            <div class="player">
+                <div class="cabecalho">
+                    <h3>Jogador</h3>
+                    <p>0</p>
+                </div>
+                <div class="imagens">
+                    <a><img src="img/Pedra.png" alt="Pedra" onclick="escolha(1)"></a>
+                    <a><img src="img/Papel.png" alt="Papel" onclick="escolha(2)"></a>
+                    <a><img src="img/Tesoura.png" alt="Tesoura" onclick="escolha(3)"></a>
+                </div>
+            </div>
+
+            <h2>VS</h2>
+
+            <div class="pc">
+                <div class="cabecalho">
+                    <p>0</p>
+                    <h3>Computador</h3>
+                </div>
+                <div class="imagens">
+                    <a><img src="img/Pedra.png" alt="Pedra"></a>
+                    <a><img src="img/Papel.png" alt="Papel"></a>
+                    <a><img src="img/Tesoura.png" alt="Tesoura"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="console">
+            <h1>...</h1>
+        </div>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
